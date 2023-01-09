@@ -1,4 +1,5 @@
 public class Operators {
+
     //Return BinaryString
     public static String toBinaryString(int val){
         String str = Integer.toBinaryString(val);
@@ -7,6 +8,50 @@ public class Operators {
         }
         return str;
     }
+
+    //Overflow Exception function
+    public static void CheckOverflowExample(int left, int right){
+        try{
+            int result = safeAdd(left, right);
+            System.out.println(result);
+        }
+        catch(ArithmeticException e){
+            System.out.println("Overflow Detected! Cannot calculate Correctly!");
+        }
+    }
+    public static int safeAdd(int left, int right){
+        if(right > 0){
+            if(left > Integer.MAX_VALUE - right){throw new ArithmeticException("Overflow Detected!");}
+        }
+        else{
+            if(left < Integer.MIN_VALUE - right){throw new ArithmeticException("Overflow Detected!");}
+        }
+        return left + right;
+    }
+
+    //NaN and Infinity Exception function
+    public static void CheckNaNInfinityExample(double left, double right){
+        try{
+            double result_1 = safeDevide(left, right);
+            double result_2 = safeRemainder(left, right);
+            System.out.println(result_1);
+            System.out.println(result_2);
+        }
+        catch(ArithmeticException e){
+            System.out.println("NaN or Infinity Detected!");
+        }
+    }
+    public static double safeDevide(double left, double right){
+        double z = left / right;
+        if(Double.isInfinite(z)){throw new ArithmeticException("Infinity Detected!");}
+        return z;
+    }
+    public static double safeRemainder(double left, double right){
+        double z = left % right;
+        if(Double.isNaN(z)){throw new ArithmeticException("NaN Detected!");}
+        return z;
+    }
+    //Main
     public static void main(String[] args){
         //Converting Data type
         byte byteval = 10;
@@ -95,24 +140,40 @@ public class Operators {
         CheckOverflowExample(n1, n2);
 
         //Accuracy Testing
+        int apple = 1;
+        double pieceunit = 0.1;
+        int number = 7;
+        
+        double pieces = apple - pieceunit*number;   //Not Accurate because of the two exponent calculation (2의 보수)
+        System.out.println(pieces);
+        
+        int totalpieces = apple * 10;
+        double A_pieces = (totalpieces - number)/10.0;
+        System.out.println(A_pieces);
+
+        //NaN and Infinity Calculation --- will cause problem
+        int x = 5; int y = 0;
+        CheckNaNInfinityExample(x, y);
+
+        //Converting userinput and NaN or Infinity Check
+        String userInput = "NaN";
+        double val = Double.valueOf(userInput);
+
+        double currentBalance = 10000.0 + val;
+        CheckNaNInfinityExample(currentBalance, 1);
+
+        //String Connecting Operator
+        String str1 = "JDK" + 6.0;
+        String str2 = str1 + " 특징";
+        System.out.println(str2);
+
+        String str3 = "JDK" + 3 + 3.0;
+        String str4 = 3 + 3.0 + "JDK";
+        System.out.println(str3);
+        System.out.println(str4);
+
+        //Compare Operator
         
     }
-    public static void CheckOverflowExample(int left, int right){
-        try{
-            int result = safeAdd(left, right);
-            System.out.println(result);
-        }
-        catch(ArithmeticException e){
-            System.out.println("Overflow Detected! Cannot calculate Correctly!");
-        }
-    }
-    public static int safeAdd(int left, int right){
-        if(right > 0){
-            if(left > Integer.MAX_VALUE - right){throw new ArithmeticException("Overflow Detected!");}
-        }
-        else{
-            if(left < Integer.MIN_VALUE - right){throw new ArithmeticException("Overflow Detected!");}
-        }
-        return left + right;
-    }
+
 }

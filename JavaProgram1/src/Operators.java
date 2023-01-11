@@ -173,7 +173,74 @@ public class Operators {
         System.out.println(str4);
 
         //Compare Operator
-        
+        int num1 = 10, num2 = 10;
+        boolean b_result_1 = (num1 == num2);
+        boolean b_result_2 = (num1 != num2);
+        boolean b_result_3 = (num1 <= num2);
+
+        char char1 = 'A', char2 = 'B';
+        boolean b_result_4 = (char1 < char2);
+
+        System.out.println(b_result_1);
+        System.out.println(b_result_2);
+        System.out.println(b_result_3);
+        System.out.println(b_result_4);
+
+        int v_2 = 1;
+        double v_3 = 1.0;
+        System.out.println(v_2 == v_3);
+
+        double v_4 = 0.1;
+        float v_5 = 0.1f;
+        System.out.println(v_4 == v_5);
+
+        //When comparing string type
+        String strVar1 = "신민철";
+        String strVar2 = "신민철";
+        String strVar3 = new String("신민철");  //new String Structure declare different between strVar2
+
+        System.out.println(strVar1 == strVar2);
+        System.out.println(strVar2 == strVar3);
+        System.out.println(strVar2.equals(strVar3));
+
+        //Bit Operator
+        byte b1 = 45; byte b2 = 25;
+        System.out.println("b1 & b2 = " + (b1 & b2));
+
+        System.out.println("45 & 25 = " + (45 & 25));
+        System.out.println("45 | 25 = " + (45 | 25));
+        System.out.println("45 ^ 25 = " + (45 ^ 25));
+        System.out.println("~45 = " + (~45));
+
+        //Bit Shift Operator
+        int b_shift1 = 1 << 3;
+        int b_shift2 = -8 >> 3;
+        int b_shift3 = -8 >>> 3;
+        System.out.println("1 << 3 = " + b_shift1 + "\n-8 >> 3 = " + b_shift2 + "\n-8 >>> 3 = " + b_shift3);
+
+        //Multi Calculation Operator
+        int A_result = 10;
+
+        A_result += 5;  // same as A_result = A_result + 5
+        A_result -= 3;  // same as A_result = A_result - 3
+        A_result *= 5;  // same as A_result = A_result * 5
+        A_result /= 2;  // same as A_result = A_result / 2
+        A_result %= 3;  // same as A_result = A_result % 3
+
+        byte B_result = 45;
+
+        B_result >>= 4; // same as B_result = B_result >> 4
+        B_result <<= 3; // same as B_result = B_result << 3
+        B_result >>>= 5;// same as B_result = B_result >>> 5
+        B_result &= 45; // same as B_result = B_result & 45
+        B_result |= 45; // same as B_result = B_result | 45
+        B_result ^= 45; // same as B_result = B_result ^ 45
+
+        System.out.println("A_result = " + A_result + "\nB_result = " + B_result);
+
+        //Triple Calculation Operator
+        int score = 90;
+        System.out.println(score > 75 ? 'A' : 'B');
     }
 
 }

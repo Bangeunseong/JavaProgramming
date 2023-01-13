@@ -1,3 +1,4 @@
+package Basics;
 public class OperatorExercise {
     public static void StudentGrade(int score){
         String result = (!(score > 90) ? "가" : "나");

@@ -1,3 +1,4 @@
+package Basics;
 import java.util.Scanner;
 
 public class ConditionsLoops {
@@ -75,6 +76,7 @@ public class ConditionsLoops {
             System.out.println(input);
         }while(!input.equals("q"));
 
+        scan.close();
         System.out.println();
         System.out.println("Procedure Eliminated");
     }

@@ -1,3 +1,4 @@
+package Basics;
 import java.util.Scanner;
 public class ConditionsLoopsExercise {
     public static int SumofMultipleofN(int N){
@@ -59,6 +60,7 @@ public class ConditionsLoopsExercise {
                 System.out.println(); run = false; break;
             }
         }
+        scan.close();
         System.out.print("Procedure Eliminated");
     }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ButtonExample",
+            "request": "launch",
+            "mainClass": "NestedClass.Button.ButtonExample",
+            "projectName": "JavaProgram1_5fd75722"
+        },
+        {
+            "type": "java",
             "name": "Launch TouristList",
             "request": "launch",
             "mainClass": "TouristList",

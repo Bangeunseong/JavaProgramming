@@ -6,15 +6,12 @@ public class MemberList {
     LinkedList<Member> members = new LinkedList<Member>();
     
     public void SignUp(){
-        Member member = new Member();
         Scanner scan = new Scanner(System.in);
         
-        System.out.print("ID: ");
-        String ID = scan.nextLine().toString(); member.setID(ID);
-        System.out.print("PassWord: ");
-        String Password = scan.nextLine().toString(); member.setPassword(Password);
+        System.out.print("ID: "); String ID = scan.nextLine();
+        System.out.print("PassWord: "); String Password = scan.nextLine();
 
-        members.addLast(member);
+        members.addFirst(new Member(ID, Password));
         scan.close();
     }
     public void Login(String ID, String Password) throws NotExistIDException, WrongPasswordException{

@@ -3,11 +3,11 @@ package NestedClass.Button;
 public class ButtonExample {
     public static void main(String[] args){
         Button btn = new Button();
-        //AnonymousObject ano = new AnonymousObject();
+        AnonymousObject ano = new AnonymousObject();
 
-        //ano.field.touch();
-        //ano.field.SetOnClickListener(ano);
-
+        ano.field.SetOnClickListener(ano);
+        ano.field.touch();
+        
         btn.SetOnClickListener(new CallListener());
         btn.touch();
 

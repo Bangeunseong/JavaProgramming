@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "MemberManageMent.Main",
+            "projectName": "JavaProgram1_5fd75722"
+        },
+        {
+            "type": "java",
             "name": "Launch ButtonExample",
             "request": "launch",
             "mainClass": "NestedClass.Button.ButtonExample",

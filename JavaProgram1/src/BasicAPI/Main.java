@@ -1,9 +1,6 @@
 package BasicAPI;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.Parameter;
-import java.nio.charset.CharsetEncoder;
 import java.text.DecimalFormat;
 import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
@@ -15,7 +12,6 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -26,13 +22,9 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
-import java.util.Properties;
 import java.util.Random;
-import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.regex.Pattern;
-
-import com.oracle.webservices.internal.api.message.MessageContext;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException{
         //Using equals method to compare each other

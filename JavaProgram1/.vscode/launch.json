@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PredicateInterface",
+            "request": "launch",
+            "mainClass": "Lamda.StandardAPIFunctionalInterface.PredicateInterface",
+            "projectName": "JavaProgram1_5fd75722"
+        },
+        {
+            "type": "java",
+            "name": "Launch UtilExample",
+            "request": "launch",
+            "mainClass": "Generic.GenericExample.UtilExample",
+            "projectName": "JavaProgram1_5fd75722"
+        },
+        {
+            "type": "java",
+            "name": "Launch CallbackExample",
+            "request": "launch",
+            "mainClass": "Thread.ControlThread.ThreadPool.CallbackExample",
+            "projectName": "JavaProgram1_5fd75722"
+        },
+        {
+            "type": "java",
             "name": "Launch YieldExample",
             "request": "launch",
             "mainClass": "Thread.ControlThread.YieldExample",

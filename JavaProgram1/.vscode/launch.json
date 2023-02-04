@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PropertiesExample",
+            "request": "launch",
+            "mainClass": "CollectionFramework.Properties.PropertiesExample",
+            "projectName": "JavaProgram1_5fd75722"
+        },
+        {
+            "type": "java",
             "name": "Launch PredicateInterface",
             "request": "launch",
             "mainClass": "Lamda.StandardAPIFunctionalInterface.PredicateInterface",

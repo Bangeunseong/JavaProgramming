@@ -1,0 +1,19 @@
+package CollectionFramework.LIFOnFIFO.Stack;
+
+import java.util.Stack;
+
+public class StackExample {
+    public static void main(String[] args){
+        Stack<Coin> coinBox = new Stack<Coin>();
+
+        coinBox.add(new Coin(100));
+        coinBox.add(new Coin(50));
+        coinBox.add(new Coin(500));
+        coinBox.add(new Coin(10));
+
+        while(!coinBox.isEmpty()){
+            Coin coin  = coinBox.pop();
+            System.out.println("Poped Coin value: " + coin.getValue());
+        }
+    }
+}

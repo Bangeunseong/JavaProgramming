@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StreamExample",
+            "request": "launch",
+            "mainClass": "StreamNParallelOperation.StreamNParallelOperationExample.StreamExample",
+            "projectName": "JavaProgram1_5fd75722"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaleStudentExample",
+            "request": "launch",
+            "mainClass": "StreamNParallelOperation.ParallelOperation.MaleStudentExample",
+            "projectName": "JavaProgram1_5fd75722"
+        },
+        {
+            "type": "java",
             "name": "Launch PropertiesExample",
             "request": "launch",
             "mainClass": "CollectionFramework.Properties.PropertiesExample",

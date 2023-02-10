@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <ImageView fitWidth="500" fitHeight="300">
+            <image><Image url="@images/Test4.png"/></image>
+        </ImageView>
+        <ImageView preserveRatio="true">
+            <image><Image url="@images/Test.png"/></image>
+        </ImageView>
+    </children>
+</StackPane>

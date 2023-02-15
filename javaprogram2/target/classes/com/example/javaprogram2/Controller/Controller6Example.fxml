@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.String?>
+<?import javafx.collections.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+    fx:controller="com.example.javaprogram2.example6Controller"
+    prefHeight="380.0" prefWidth="485.0">
+    <children>
+        <Label layoutX="22.0" layoutY="36.0" text="Title"/>
+        <TextField fx:id="txtTitle" layoutX="84.0" layoutY="32.0"
+        prefHeight="23.0" prefWidth="375.0"/>
+
+        <Label layoutX="22.0" layoutY="69.0" text="PassWord"/>
+        <PasswordField fx:id="txtPassWord" layoutX="86.0" layoutY="65.0"
+        prefHeight="23.0" prefWidth="132.0"/>
+
+        <Label layoutX="22.0" layoutY="104.0" text="Public"/>
+        <ComboBox fx:id="comboPublic" layoutX="86.0" layoutY="100.0"
+        prefHeight="23.0" prefWidth="132.0" promptText="Choose">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Public"/>
+                    <String fx:value="Private"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Label layoutX="240.0" layoutY="104.0" text="Program"/>
+        <DatePicker fx:id="dateExit" layoutX="296.0" layoutY="100.0" promptText="Choose Date"/>
+        <Label layoutX="22.0" layoutY="135.0" text="Content"/>
+        <TextArea fx:id="txtContent" layoutX="22.0" layoutY="154.0"
+        prefHeight="132.0" prefWidth="440.0"/>
+
+        <Separator layoutX="13.0" layoutY="320" prefHeight="0.0" prefWidth="457"/>
+        <Button fx:id="btnReg" layoutX="189" layoutY="340" text="Register" onAction="#handleBtnRegAction"/>
+        <Button fx:id="btnCancel" layoutX="252.0" layoutY="340" text="Cancel" onAction="#handleBtnCancelAction"/>
+    </children>
+</AnchorPane>
+

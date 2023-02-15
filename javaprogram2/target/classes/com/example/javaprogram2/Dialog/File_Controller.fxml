@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.javaprogram2.FileController"
+    alignment="TOP_LEFT" spacing="10">
+    <children>
+        <Button onAction="#handleOpenFileChooser" text="Open FileChooser"/>
+        <Button onAction="#handleSaveFileChooser" text="Save FileChooser"/>
+        <Button onAction="#handleDirectoryChooser" text="DirectoryChooser"/>
+        <Button fx:id="btnPopup" onAction="#handlePopup" text="Popup"/>
+        <Button fx:id="btnCustom" onAction="#handleCustom" text="Custom"/>
+    </children>
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+</HBox>

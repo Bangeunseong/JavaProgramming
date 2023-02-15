@@ -1,0 +1,16 @@
+/* Selecting all Label */
+Label{
+    -fx-padding: 5;
+}
+
+/* Selecting Control id="lblId" */
+#lblId{
+    -fx-background-color: black;
+    -fx-text-fill: yellow;
+} 
+
+/* Selecting Control styleClass="lblClass" */
+.lblClass{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}

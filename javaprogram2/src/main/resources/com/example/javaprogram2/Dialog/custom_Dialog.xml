@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane prefHeight="150" prefWidth="400" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <ImageView fitHeight="50" fitWidth="50" layoutX="15" layoutY="15" preserveRatio="true">
+            <image><Image url="@images/Test.png"/></image>
+        </ImageView>
+        <Button id="btnOk" layoutX="336" layoutY="104" text="OK"/>
+        <Label id="txtTitle" layoutX="87" layoutY="33" prefHeight="15" prefWidth="290"/>
+    </children>
+</AnchorPane>

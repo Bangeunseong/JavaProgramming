@@ -8,7 +8,7 @@ public class Calculator {
     public void setMemory(int memory){
         synchronized(this){
             this.memory = memory;
-            try{Thread.sleep(2000);}
+            try{Thread.sleep(10);}
             catch(InterruptedException e){}
             System.out.println(Thread.currentThread().getName() + ": " + this.memory);
         }

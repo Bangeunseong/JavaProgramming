@@ -34,6 +34,10 @@ public class FunctionExample1 {
     }
 
     public static void main(String[] args){
+        System.out.print("StudentList: "); printString(s->s.getName());
+        System.out.print("EnglishScore: "); printInt(s->s.getEnglishScore());
+        System.out.print("MathScore: "); printInt(s->s.getMathScore());
+
         double englishAvg = avg(s->s.getEnglishScore());
         System.out.println("EnglishAvg: " + englishAvg);
 

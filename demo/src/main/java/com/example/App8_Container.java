@@ -11,7 +11,7 @@ public class App8_Container extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Container/TilePane.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Container/GridPane.fxml"));
         scene = new Scene(root);
         stage.setTitle("AppMain");
         stage.setScene(scene);

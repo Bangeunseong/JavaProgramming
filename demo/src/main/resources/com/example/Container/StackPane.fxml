@@ -2,5 +2,15 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
 
+<StackPane xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <ImageView fitWidth="500" fitHeight="300">
+            <image><Image url="@testImages/Test2.png"/></image>
+        </ImageView>
+        <ImageView preserveRatio="true">
+            <image><Image url="@testImages/Test1.jpg"/></image>
+        </ImageView>
+    </children>
+</StackPane>

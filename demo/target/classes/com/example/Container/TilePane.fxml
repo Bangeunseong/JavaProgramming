@@ -7,22 +7,22 @@
 <TilePane xmlns:fx="http://javafx.com/fxml" prefTileHeight="100" prefTileWidth="100">
     <children>
         <ImageView>
-            <image><Image url="@images/Test2.png"/></image>
+            <image><Image url="@testImages/Test2.png"/></image>
         </ImageView>
         <ImageView>
-            <image><Image url="@images/Test2.png"/></image>
+            <image><Image url="@testImages/Test2.png"/></image>
         </ImageView>
         <ImageView>
-            <image><Image url="@images/Test2.png"/></image>
+            <image><Image url="@testImages/Test2.png"/></image>
         </ImageView>
         <ImageView>
-            <image><Image url="@images/Test2.png"/></image>
+            <image><Image url="@testImages/Test2.png"/></image>
         </ImageView>
         <ImageView>
-            <image><Image url="@images/Test2.png"/></image>
+            <image><Image url="@testImages/Test2.png"/></image>
         </ImageView>
         <ImageView>
-            <image><Image url="@images/Test2.png"/></image>
+            <image><Image url="@testImages/Test2.png"/></image>
         </ImageView>
     </children>
 </TilePane>

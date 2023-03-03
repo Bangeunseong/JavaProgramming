@@ -12,7 +12,7 @@ public class App4 extends Application {
 
     @Override
     public void start(Stage stage) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Controller/Controller10Example.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ContainerType/StackPaneExample.fxml"));
         scene = new Scene(fxmlLoader.load());
 
         stage.setTitle("AppMain4");

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.ControllerExample3"
+    prefWidth="200" prefHeight="200" spacing="10">
+    <padding><Insets topRightBottomLeft="10"/></padding>
+    <children>
+        <Label text="textArea1"/>
+        <TextArea fx:id="textArea1"/>
+        <Label text="textArea2"/>
+        <TextArea fx:id="textArea2"/>
+    </children>
+</VBox>
